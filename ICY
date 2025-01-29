@@ -58,9 +58,6 @@ def get_data(name):
     data = np.loadtxt(name,skiprows=11)[:,:2]
     return [data[:,0],data[:,1]]
 
-filename = 'data_files/2mm0.1field0angle.txt'
-V_I = get_data(filename)
-
 angles = [0,45,90]
 fields = [0,0.05,0.1,0.2,0.3,0.4,0.5]
 
